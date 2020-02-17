@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SkillUP Homework 6">
+    <meta name="keywords" content="HTML form, HTML meta tag, CSS">
+    <meta name="author" content="Belov Alexei">
+    <title>My HomeWork. Forms.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-us">
+        <form action="" method="POST">
+            <label class="block" for="name">Your Name (required)
+                <input class="block" type="text" name="name" id="name" required>
+            </label>
+            <label class="block" for="email">Your Email (required)
+                <input class="block" type="text" name="email" id="email" required>
+            </label>
+            <label for="checkbox">Who are you? <br>
+                <input type="checkbox" id="checkbox" name="Client" value="Client"> Client <br>
+                <input type="checkbox" id="checkbox" name="Developer" value="Developer"> Developer <br>
+                <input type="checkbox" id="checkbox" name="User" value="User"> User
+            </label> <br> <br>
+            <label class="block" for="select">Message subject
+                <select class="block" name="Message-subject" id="select">
+                    <option value="Cooperation">Cooperation</option>
+                    <option value="Development" selected>Development</option>
+                    <option value="I want to work">I want to work</option>
+                </select>
+            </label>
+            <label class="block" for="message">Your Message
+                <textarea class="block" name="message" id="message" cols="60" rows="10"></textarea>
+            </label>
+            <input class="btn" type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>
