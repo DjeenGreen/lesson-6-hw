@@ -1,0 +1,45 @@
+$bg-color:  #f0f0f0;
+$border-color: #696969;
+@mixin input-size {
+    width: 300px;
+    height: 30px;
+    border: none;
+}
+@mixin btn {
+    width: 70px;
+    height: 35px;
+    background-color: $border-color;
+    color: $bg-color;
+    border: none;
+    cursor: pointer;
+}
+.body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact-us {
+    width: 500px;
+    height: 700px;
+    margin: auto;
+    padding: 30px;
+    background-color: $bg-color;
+    border: 3px solid $border-color;
+}
+.block {
+    display: block;
+}
+.input-checkbox {
+    margin-bottom: 10px;
+    border: none;
+}
+.input-text {
+    @include input-size();
+}
+label {
+    margin-bottom: 20px;
+}
+.btn {
+    @include btn();
+}

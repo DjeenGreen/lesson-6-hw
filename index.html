@@ -13,16 +13,23 @@
     <div class="contact-us">
         <form action="" method="POST">
             <label class="block" for="name">Your Name (required)
-                <input class="block" type="text" name="name" id="name" required>
+                <input class="block input-text" type="text" name="name" id="name" required>
             </label>
             <label class="block" for="email">Your Email (required)
-                <input class="block" type="text" name="email" id="email" required>
+                <input class="block input-text" type="text" name="email" id="email" required>
             </label>
-            <label for="checkbox">Who are you? <br>
-                <input type="checkbox" id="checkbox" name="Client" value="Client"> Client <br>
-                <input type="checkbox" id="checkbox" name="Developer" value="Developer"> Developer <br>
-                <input type="checkbox" id="checkbox" name="User" value="User"> User
-            </label> <br> <br>
+            <fieldset class="input-checkbox">
+                <legend>Who are you?</legend>
+                <label class="block" for="Client">
+                    <input type="checkbox" id="Client" name="Client" value="Client"> Client
+                </label>
+                <label class="block" for="Developmer">
+                    <input type="checkbox" id="Developmer" name="Developmer" value="Developmer"> Developmer
+                </label>
+                <label class="block" for="User">
+                    <input type="checkbox" id="User" name="User" value="User"> User
+                </label>
+            </fieldset>
             <label class="block" for="select">Message subject
                 <select class="block" name="Message-subject" id="select">
                     <option value="Cooperation">Cooperation</option>
